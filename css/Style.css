@@ -1,0 +1,183 @@
+body{
+    perspective: 600px;
+    background: url("../img/cv.jpg") no-repeat center center fixed;
+    -webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+    height: 700px;
+}
+
+
+#playing > i{
+    padding: 0;
+    margin: 0;
+    top:0;
+    right: 0;
+    left: 0;
+}
+#play{
+    color:#fff;
+}
+#pause{
+    color:#fff;
+}
+
+#sound{
+    display: none;
+}
+
+.card{
+    
+    width:450px;
+    height: 500px;
+    margin: 50px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease-in-out;
+}
+
+.card > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color:transparent;
+    border-radius: 10px;
+    border:6px solid #000;
+    font-family: Arila,Tahoma;
+    text-align: center;
+    color:#777;
+}
+
+.card .words {
+    background-color:#6b0f24;
+    height: 252px;
+    border-radius: 8px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.words h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Tahoma;
+    margin-bottom: 5px;
+}
+.card:hover{
+    transform: rotateY(180deg)
+}
+
+.card .front header{
+    background-color: #f7e8d5;
+    width: 100%;
+    height: 256px;
+    margin-bottom: -20px;
+    border-radius: 8px;
+}
+
+.card .front{
+    z-index: 2;
+    backface-visibility: hidden;
+    
+}
+.card .front img{
+    width:100%;
+    width: 200px;
+    position: relative;
+    top:0px;
+}
+
+.card .front p{
+    margin: 0 auto;
+    width:90%;
+}
+
+.card .front span {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+    color: green;
+}
+
+.card .back {
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #222;
+    color: white;
+    font-weight: bold;
+    font-family: Tahoma;
+
+}
+
+.card .back ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+}
+
+.card .back ul h1{
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: cursive;
+}
+.card .back ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: Tahoma;
+}
+
+.links a{
+    background-color: #000;
+    color: #fff;
+    margin-left: 30px;
+    width:150px;
+    -webkit-transition:  all .5s ease-in-out;
+    -moz-transition:  all .5s ease-in-out;
+    -o-transition:  all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    border:none;
+}
+
+.links a:hover{
+    width:200px;
+    background-color:#6b0f24;
+}
+
+
+.copyright{
+	color: #fff;
+	padding:15px 0;
+	margin-top: 10px;
+	font-size: 25px;
+    font-family: Tahoma;
+    font-weight: bold;
+}
+
+
+.copyright span{
+	color: #99cc00;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: cursive;
+    letter-spacing: -2px;
+}
+
+.social a img {
+    padding-top:90px;
+    margin-right: 0px;
+    margin-left: 37px;
+    filter: brightness(50%);
+    -webkit-transition:  all .5s ease-in-out;
+    -moz-transition:  all .5s ease-in-out;
+    -o-transition:  all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
+}
+
+.social a img:hover{
+    filter: brightness(100%);
+}
